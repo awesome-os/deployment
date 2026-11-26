@@ -13,6 +13,8 @@
       "mappings": [
         { "source": "../desktop/web-sites/b8g-dev-index.html", "target": "index.html" },
         { "source": "../host-manager/console/index.html", "target": "awesome-os/apps/host-manager.html" },
+        { "source": "../holo-v11/dashboard/oversight.html", "target": "awesome-os/apps/oversight.html" },
+        { "source": "../holo-v11/reports/oversight-telemetry.json", "target": "awesome-os/apps/oversight-telemetry.json" },
         { "source": "bootstrap/install.ps1", "target": "install.ps1" },
         { "source": "bootstrap/install.sh", "target": "install.sh" }
       ],
@@ -20,6 +22,8 @@
         "https://b8g.dev/",
         "https://b8g.dev/awesome-os/",
         "https://b8g.dev/awesome-os/apps/host-manager.html",
+        "https://b8g.dev/awesome-os/apps/oversight.html",
+        "https://b8g.dev/awesome-os/apps/oversight-telemetry.json",
         "https://b8g.dev/install.ps1",
         "https://b8g.dev/install.sh"
       ]
