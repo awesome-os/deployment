@@ -52,6 +52,7 @@
       "mappings": [
         { "source": "../desktop/web-sites/awesome-os-enterprise.html", "target": "index.html" },
         { "source": "../desktop/web-sites/awesome-os-cloud.html", "target": "cloud/index.html" },
+        { "source": "../installer/web/opfs-installer.html", "target": "install/index.html" },
         { "source": "../desktop/boot/netboot/boot.ipxe", "target": "netboot/boot.ipxe" },
         { "source": "bootstrap/install.ps1", "target": "install.ps1" },
         { "source": "bootstrap/install.sh", "target": "install.sh" }
@@ -59,6 +60,7 @@
       "healthChecks": [
         "https://awesome-os.com/",
         "https://awesome-os.com/cloud/",
+        "https://awesome-os.com/install/",
         "https://awesome-os.com/netboot/boot.ipxe",
         "https://awesome-os.com/install.ps1",
         "https://awesome-os.com/install.sh"
