@@ -1,0 +1,56 @@
+{
+  "schema": "awesome-os.deployment-manifest.v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "sshHost": "ubuntu@mail.dspeed.eu",
+  "remoteBase": "/home/ubuntu/www",
+  "sites": [
+    {
+      "domain": "b8g.dev",
+      "audience": "developers",
+      "description": "Developer & Systems Engineering Portal (holo-compiler, t2linux-baseline, EmuKit, Host Manager, GitLab Holo)",
+      "remoteRoot": "/home/ubuntu/www/b8g.dev",
+      "mappings": [
+        { "source": "../desktop/web-sites/b8g-dev-index.html", "target": "index.html" },
+        { "source": "../host-manager/console/index.html", "target": "awesome-os/apps/host-manager.html" }
+      ],
+      "healthChecks": [
+        "https://b8g.dev/",
+        "https://b8g.dev/awesome-os/",
+        "https://b8g.dev/awesome-os/apps/host-manager.html"
+      ]
+    },
+    {
+      "domain": "b8g.app",
+      "audience": "workstation-users",
+      "description": "End-User to Power-User Workstation & Instant Apps Hub (Omarchy, Noctalia, ChonkStep, Sectium, White Dragon VTuber)",
+      "remoteRoot": "/home/ubuntu/www/b8g.app",
+      "mappings": [
+        { "source": "../desktop/web-sites/b8g-app-index.html", "target": "index.html" },
+        { "source": "../desktop/web-demo/vtuber.html", "target": "apps/vtuber.html" },
+        { "source": "../desktop/web-demo/vtuber-rig.mjs", "target": "apps/vtuber-rig.mjs" }
+      ],
+      "healthChecks": [
+        "https://b8g.app/",
+        "https://b8g.app/apps/desktop.html",
+        "https://b8g.app/apps/vtuber.html"
+      ]
+    },
+    {
+      "domain": "awesome-os.com",
+      "audience": "enterprise-cloud",
+      "description": "Enterprise Sovereign OS & /cloud/ Commercial Fleet Presentation + Netboot Endpoint",
+      "remoteRoot": "/home/ubuntu/www/awesome-os.com",
+      "mappings": [
+        { "source": "../desktop/web-sites/awesome-os-enterprise.html", "target": "index.html" },
+        { "source": "../desktop/web-sites/awesome-os-cloud.html", "target": "cloud/index.html" },
+        { "source": "../desktop/boot/netboot/boot.ipxe", "target": "netboot/boot.ipxe" }
+      ],
+      "healthChecks": [
+        "https://awesome-os.com/",
+        "https://awesome-os.com/cloud/",
+        "https://awesome-os.com/netboot/boot.ipxe"
+      ]
+    }
+  ]
+}
