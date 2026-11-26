@@ -1,0 +1,23 @@
+name: CI — AwesomeOS Deployment & Virtual Domain Manager
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run Virtual Domain Manager unit tests
+        run: node --test virtual-domain-manager.test.mts
+      - name: Compile C++20 vdm_local (-Wall -Wextra -Werror)
+        run: |
+          g++ -std=c++20 -O2 -Wall -Wextra -Werror local-cpp/vdm_local.cpp -o /tmp/vdm-local
+          /tmp/vdm-local --help || true
+      - name: Verify live AwesomeOS production endpoints
+        run: node deploy.mts --verify
