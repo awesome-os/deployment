@@ -53,6 +53,10 @@
         { "source": "../desktop/web-sites/awesome-os-enterprise.html", "target": "index.html" },
         { "source": "../desktop/web-sites/awesome-os-cloud.html", "target": "cloud/index.html" },
         { "source": "../installer/web/opfs-installer.html", "target": "install/index.html" },
+        { "source": "../installer/web/v11-bundle.json", "target": "install/v11-bundle.json" },
+        { "source": "../installer/web/blobs/sectium_cp.wasm", "target": "install/blobs/sectium_cp.wasm" },
+        { "source": "../installer/web/blobs/max-version-lock.json", "target": "install/blobs/max-version-lock.json" },
+        { "source": "../installer/web/blobs/ECOSYSTEM-SCOREBOARD.md", "target": "install/blobs/ECOSYSTEM-SCOREBOARD.md" },
         { "source": "../desktop/boot/netboot/boot.ipxe", "target": "netboot/boot.ipxe" },
         { "source": "bootstrap/install.ps1", "target": "install.ps1" },
         { "source": "bootstrap/install.sh", "target": "install.sh" }
@@ -61,6 +65,8 @@
         "https://awesome-os.com/",
         "https://awesome-os.com/cloud/",
         "https://awesome-os.com/install/",
+        "https://awesome-os.com/install/v11-bundle.json",
+        "https://awesome-os.com/install/blobs/sectium_cp.wasm",
         "https://awesome-os.com/netboot/boot.ipxe",
         "https://awesome-os.com/install.ps1",
         "https://awesome-os.com/install.sh"
