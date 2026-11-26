@@ -1,0 +1,19 @@
+{
+  "schema": "holo-ci.v1",
+  "name": "deployment",
+  "kind": "control-plane",
+  "tests": [
+    "node --test virtual-domain-manager.test.mts"
+  ],
+  "docs": [
+    "README.md"
+  ],
+  "guards": {
+    "zeroGhost": true,
+    "zeroCasV1": true,
+    "zeroHttpIpc": true,
+    "spdxLicense": true,
+    "gitattributes": true,
+    "codeowners": true
+  }
+}
