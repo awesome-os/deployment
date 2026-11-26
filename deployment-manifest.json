@@ -12,12 +12,16 @@
       "remoteRoot": "/home/ubuntu/www/b8g.dev",
       "mappings": [
         { "source": "../desktop/web-sites/b8g-dev-index.html", "target": "index.html" },
-        { "source": "../host-manager/console/index.html", "target": "awesome-os/apps/host-manager.html" }
+        { "source": "../host-manager/console/index.html", "target": "awesome-os/apps/host-manager.html" },
+        { "source": "bootstrap/install.ps1", "target": "install.ps1" },
+        { "source": "bootstrap/install.sh", "target": "install.sh" }
       ],
       "healthChecks": [
         "https://b8g.dev/",
         "https://b8g.dev/awesome-os/",
-        "https://b8g.dev/awesome-os/apps/host-manager.html"
+        "https://b8g.dev/awesome-os/apps/host-manager.html",
+        "https://b8g.dev/install.ps1",
+        "https://b8g.dev/install.sh"
       ]
     },
     {
@@ -28,12 +32,16 @@
       "mappings": [
         { "source": "../desktop/web-sites/b8g-app-index.html", "target": "index.html" },
         { "source": "../desktop/web-demo/vtuber.html", "target": "apps/vtuber.html" },
-        { "source": "../desktop/web-demo/vtuber-rig.mjs", "target": "apps/vtuber-rig.mjs" }
+        { "source": "../desktop/web-demo/vtuber-rig.mjs", "target": "apps/vtuber-rig.mjs" },
+        { "source": "bootstrap/install.ps1", "target": "install.ps1" },
+        { "source": "bootstrap/install.sh", "target": "install.sh" }
       ],
       "healthChecks": [
         "https://b8g.app/",
         "https://b8g.app/apps/desktop.html",
-        "https://b8g.app/apps/vtuber.html"
+        "https://b8g.app/apps/vtuber.html",
+        "https://b8g.app/install.ps1",
+        "https://b8g.app/install.sh"
       ]
     },
     {
@@ -44,12 +52,16 @@
       "mappings": [
         { "source": "../desktop/web-sites/awesome-os-enterprise.html", "target": "index.html" },
         { "source": "../desktop/web-sites/awesome-os-cloud.html", "target": "cloud/index.html" },
-        { "source": "../desktop/boot/netboot/boot.ipxe", "target": "netboot/boot.ipxe" }
+        { "source": "../desktop/boot/netboot/boot.ipxe", "target": "netboot/boot.ipxe" },
+        { "source": "bootstrap/install.ps1", "target": "install.ps1" },
+        { "source": "bootstrap/install.sh", "target": "install.sh" }
       ],
       "healthChecks": [
         "https://awesome-os.com/",
         "https://awesome-os.com/cloud/",
-        "https://awesome-os.com/netboot/boot.ipxe"
+        "https://awesome-os.com/netboot/boot.ipxe",
+        "https://awesome-os.com/install.ps1",
+        "https://awesome-os.com/install.sh"
       ]
     }
   ]
