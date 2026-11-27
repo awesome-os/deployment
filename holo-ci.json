@@ -3,7 +3,8 @@
   "name": "deployment",
   "kind": "control-plane",
   "tests": [
-    "node --test virtual-domain-manager.test.mts"
+    "node --test virtual-domain-manager.test.mts",
+    "node --test edge-cas-worker.test.mts"
   ],
   "docs": [
     "README.md"
@@ -12,6 +13,7 @@
     "zeroGhost": true,
     "zeroCasV1": true,
     "zeroHttpIpc": true,
+    "noWorkflowBloat": true,
     "spdxLicense": true,
     "gitattributes": true,
     "codeowners": true

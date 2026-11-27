@@ -4,6 +4,7 @@
   "publicEntrypoints": [
     "deploy.mts",
     "virtual-domain-manager.mts",
+    "edge-cas-worker.mts",
     "bootstrap/install.ps1",
     "bootstrap/install.sh"
   ],
@@ -11,7 +12,8 @@
     "bootstrap",
     "local-cpp",
     "deploy.mts",
-    "virtual-domain-manager.mts"
+    "virtual-domain-manager.mts",
+    "edge-cas-worker.mts"
   ],
   "abiGoldenFiles": [
     "deployment-manifest.json",

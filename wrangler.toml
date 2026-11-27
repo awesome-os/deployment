@@ -1,0 +1,10 @@
+name = "awesome-os-edge-cas"
+main = "edge-cas-worker.mts"
+compatibility_date = "2026-11-01"
+
+[vars]
+PAGES_CDN_BASE = "https://awesome-os.github.io/holo-v11"
+
+[[r2_buckets]]
+binding = "HOLO_CAS_BUCKET"
+bucket_name = "awesome-os-holo-cas-v11"
