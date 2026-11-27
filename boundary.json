@@ -1,0 +1,27 @@
+{
+  "schema": "holo-boundary.v1",
+  "plane": 5,
+  "publicEntrypoints": [
+    "deploy.mts",
+    "virtual-domain-manager.mts",
+    "bootstrap/install.ps1",
+    "bootstrap/install.sh"
+  ],
+  "includePaths": [
+    "bootstrap",
+    "local-cpp",
+    "deploy.mts",
+    "virtual-domain-manager.mts"
+  ],
+  "abiGoldenFiles": [
+    "deployment-manifest.json",
+    "virtual-domains.json"
+  ],
+  "forbiddenImports": [
+    "intersections/sectium-browser",
+    "../../packages/",
+    "../../sections/"
+  ],
+  "maxParentTraversals": 2,
+  "scanSourceHttpIpc": true
+}
